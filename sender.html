@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html class="sender"lang="en">
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Chat</h1>
+  <button type="button" onClick="location.href='/logout'">Log out</button>
+  <hr>
+  {chats}
+  <hr>
+  <form method="post" action="/add">
+    <p>Message: <input type="text" name="message" required></p>
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
